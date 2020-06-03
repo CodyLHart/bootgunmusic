@@ -1,0 +1,421 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.flexc {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexr {
+    display: flex;
+    flex-direction: row;
+}
+
+.blackstripe {
+    width: 100vw;
+    background-color: black;
+    color: white;
+    font-family: "Source Code Pro", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.blackstripe h1 {
+    background-color: white;
+    color: black;
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+body {
+    margin: 0;
+    /* background-color: black; */
+}
+
+.burger-nav {
+    display: none;
+}
+
+.desktop {
+    display: grid;
+    grid-template-rows: 150px 1fr 35px;
+    grid-template-columns: 1fr;
+}
+
+footer {
+    height: 50px;
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    color: #3a3a3a;
+    font-size: 18px;
+    font-family: "Abel", sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+header {
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+hr {
+    color: white;
+    width: 40vw;
+}
+
+.image {
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.image1 {
+    background-image: url("./images/img-boots.jpg");
+    min-height: 600px;
+}
+
+.image1 h1 {
+    color: white;
+    font-family: "Source Code Pro", sans-serif;
+    font-weight: 200;
+    margin: 15px;
+    text-align: center;
+}
+
+.image2 {
+    background-image: url("./images/butt-goons.jpg");
+    background-position: top;
+}
+
+.image3 {
+    background-image: url("./images/Davie.jpg");
+    background-position: top;
+}
+
+.image4 {
+    background-image: url("./images/Just3.JPG");
+    background-position: top;
+}
+
+.image5 {
+    background-image: url("./images/cody.jpg");
+}
+
+img.header-logo {
+    height: 110px;
+    margin: 20px;
+    opacity: .7;
+}
+
+main {
+    position: fixed;
+    top: 150px;
+    bottom: 35px;
+    width: 100vw;
+    grid-row: 2 / 3;
+    /* background-color: green; */
+    grid-column: 1 / 2;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.mobile {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Abel", sans-serif;
+    opacity: .7;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+nav.left a {
+    margin-left: 25px;
+}
+
+nav.right a {
+    margin-right: 25px;
+}
+
+p {
+    font-family: "Source Code Pro", sans-serif;
+    width: 60vw;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+}
+
+.show {
+    width: 40vw;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 25px 0;
+}
+
+.show a {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    opacity: .6;
+}
+
+.show a:hover {
+    opacity: 1;
+}
+
+.show h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+}
+
+.social {
+    height: 100%;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.social img {
+    width: 25px;
+    margin: 3px;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.social img:hover {
+    opacity: 1;
+}
+
+.twyg-cover {
+    /* height: 500px;
+    width: 500px; */
+    width: 35vw;
+    min-width: 300px;
+    /* box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.75); */
+}
+
+.twyg-cover img {
+    width: 100%;
+
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+iframe {
+    margin: 40px;
+}
+
+#contact a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#contact a h3 {
+    font-weight: 300;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 992px) {
+    .image {
+        background-attachment: scroll;
+        background-size: cover;
+        height: 400px;
+        position: scroll;
+    }
+
+    h1 {
+        font-size: 6vw;
+    }
+
+    
+}
+
+
+@media (max-width: 750px) {
+    .social {
+        /* flex-direction: row; */
+    }
+
+    header {
+        /* flex-direction: column; */
+        /* position: fixed; */
+    }
+
+    nav {
+        display: none;
+        /* flex-direction: column;
+        align-items: center; */
+        /* text-align: center; */
+    }
+
+    .burger-slice {
+        width: 50px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: white;
+        opacity: .7;
+    }
+
+    .burger-nav {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        position: fixed;
+        cursor: pointer;
+        /* align-items: flex-end; */
+    }
+
+    .burger {
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .burger-nav a {
+        width: 100vw;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .burger-nav a:hover {
+        background-color: #101010;
+    }
+}
+
+/* @media (max-width: 750px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile-main {
+        background-image: url("./images/img-boots.jpg");
+        width: 100vw;
+        height: 65vh;
+        position: fixed;
+        top: 20vh;
+        background-position: center;
+        color: white;
+    }
+
+    .mobile-main h1 {
+        font-family: "Source Code Pro", sans-serif;
+        font-weight: 200;
+        margin: 15px;
+        font-size: 4vh;
+    }
+
+    .mobile {
+        background-color: black;
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .mobile-header {
+        width: 100vw;
+        height: 20vh;
+        position: fixed;
+        margin: 0;
+        top: 0;
+        background-color: black;
+    }
+
+    .mobile .logo {
+        height: 18vh;
+        position: fixed;
+        opacity: .7
+    }
+
+    .mobile .icon {
+        height: 8vh;
+        margin: 3vw;
+        opacity: .7;
+    }
+
+    .wrap {
+        width: 100vw;
+        height: 15vh;
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 0px;
+        background-color: black;
+    }
+
+    .twyg-cover-mobile {
+        height: 35vh;
+    }
+
+    .twyg-cover-mobile img {
+        height: 100%;
+    }
+} */
+
+
+.hidden {
+    display: none;
+}
