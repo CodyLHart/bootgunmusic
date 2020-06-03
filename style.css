@@ -233,15 +233,15 @@ p {
 }
 
 .twyg-cover {
-    /* height: 500px;
-    width: 500px; */
     width: 35vw;
     min-width: 300px;
+    max-width: 465px;
     /* box-shadow: 0px 0px 34px 0px rgba(0,0,0,0.75); */
 }
 
 .twyg-cover img {
     width: 100%;
+    max-width: 465px;
 
 }
 
